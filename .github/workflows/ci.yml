@@ -20,8 +20,7 @@ jobs:
         with:
           dotnet-version: '8.x'
 
-      - name: Восстанавливаем пакеты
-        run: dotnet restore
+      - name: Восстанавливаем пакеты Calculator
 
       - name: Собираем проект
         run: dotnet build --no-restore --configuration Release
